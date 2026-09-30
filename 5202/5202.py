@@ -10,7 +10,6 @@ for test_case in range(1, T + 1):
     # docker 는 [[s1,e1],[s2,e2],...]형태
     N = int(input())
     docker = [list(map(int, input().split())) for _ in range(N)]
-    time = [0 for _ in range(24)]
     # 종료 시간이 빠른 것 부터 넣기
     docker.sort(key=lambda x: x[1])
     result = 0
