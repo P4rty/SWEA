@@ -15,7 +15,6 @@ for test_case in range(1, T + 1):
     q.append((N, 0))
     used[N] = 1
     result = -1
-    result = float("inf")
     while q:
         now, check = q.popleft()
         if now == M:
